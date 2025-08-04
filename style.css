@@ -1,0 +1,135 @@
+/* Mengatur tampilan dasar halaman */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f7fb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* header */
+header {
+    background: darkblue;
+    color: #fff;
+    padding: 32px 0 16px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(30,136,229,0.07);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: 8px;
+}
+
+/* Navigasi */
+nav {
+    background: #e3f2fd;
+    box-shadow: 0 2px 8px rgba(30,136,229,0.03);
+    margin-bottom: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: 500;
+    padding: 12px 0;
+    display: block;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #0d47a1;
+}
+
+/* utama */
+.main-img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 24px auto 32px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(30,136,229,0.11);
+}
+
+/* Bagian konten sejarah */
+.sejarah {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(30,136,229,0.07);
+    max-width: 800px;
+    margin: 0 auto 32px auto;
+    padding: 32px;
+}
+
+.sejarah h2 {
+    color: #1e88e5;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.sejarah p {
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.sejarah ul {
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+.sejarah a {
+    color: #1565c0;
+    text-decoration: underline;
+}
+
+/* footer */
+footer {
+    background: darkblue;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1rem;
+    position: relative;
+}
+
+/*  buat layar kecil */
+@media (max-width: 600px) {
+    .sejarah {
+        padding: 16px;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .main-img {
+        max-width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 8px 0;
+    }
+}
+
+html {
+  scroll-behavior: smooth; /* Animasi scroll saat klik menu */
+}
